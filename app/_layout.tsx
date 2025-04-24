@@ -14,7 +14,12 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'ClashGrotesk-Bold': require('../assets/fonts/ClashGrotesk-Bold.otf'),
+    'ClashGrotesk-ExtraLight': require('../assets/fonts/ClashGrotesk-Extralight.otf'),
+    'ClashGrotesk-Light': require('../assets/fonts/ClashGrotesk-Light.otf'),
+    'ClashGrotesk-Medium': require('../assets/fonts/ClashGrotesk-Medium.otf'),
+    'ClashGrotesk-Regular': require('../assets/fonts/ClashGrotesk-Regular.otf'),
+    'ClashGrotesk-SemiBold': require('../assets/fonts/ClashGrotesk-Semibold.otf'),
   });
 
   useEffect(() => {
@@ -29,8 +34,11 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack 
+      // initialRouteName='(auth)'
+      >
+         <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen name="(auth)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
