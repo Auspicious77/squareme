@@ -53,14 +53,16 @@ const Onboarding: React.FC = ({ }) => {
         return (
             <View style={{ alignSelf: 'center', bottom: scale(30), width: SCREEN_WIDTH*0.9,}}>
                 <View style={{ width: '100%' }}>
-                    <Button text="Create an account" onPress={goToNext} />
+                    <Button 
+                    text="Create an account" 
+                    onPress={()=> router.navigate('/(auth)/sign-up')} />
                 </View>
 
                 <View style={{ width: '100%', marginTop: scale(10) }}>
                     <Button
                      secondary={true}
                      text="I already have an account" 
-                     onPress={goToNext} />
+                     onPress={()=> router.navigate('/(auth)/sign-in')} />
                 </View>
             </View>
         );
@@ -71,14 +73,14 @@ const Onboarding: React.FC = ({ }) => {
         return (
             <View style={{ alignSelf: 'center', bottom: scale(30), width: SCREEN_WIDTH*0.9,}}>
                 <View style={{ width: '100%' }}>
-                    <Button text="Create an account" onPress={goToNext} />
+                    <Button text="Create an account" onPress={()=> router.navigate('/(auth)/sign-up')} />
                 </View>
 
                 <View style={{ width: '100%', marginTop: scale(10) }}>
                     <Button
                      secondary={true}
                      text="I already have an account" 
-                     onPress={goToNext} />
+                     onPress={()=> router.navigate('/(auth)/sign-in')} />
                 </View>
             </View>
         );

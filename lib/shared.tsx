@@ -28,16 +28,12 @@ export function Capitalize(string: string) {
 
 
 
-
-export const formattedAmountWithNaira = (amount: any) => {
+export const formattedAmountWithNaira = (amount: any, dp = 2) => {
   return amount
-    ? "\u20A6" +
-      Math.round(parseFloat(amount)) // Round to nearest naira
-        .toString()
-        .replace(/\B(?=(\d{3})+(?!\d))/g, ',') // Add commas as thousands separators
-    : "₦0.00";
+    ? "NGN " +
+    parseFloat(amount).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+    : "NGN0.00";
 }
-
 
 export const formatDateString = (dateString: string): string => {
   const date = new Date(dateString);
