@@ -78,7 +78,8 @@ const SignIn: React.FC = () => {
                 <Button
                     buttonStyle={{ marginTop: scale(60) }}
                     text='Login' 
-                    onPress={()=> router.replace('/(main)/home')}/>
+                    onPress={()=> router.replace('/(root)/(tabs)/home')}
+                    />
                 <Text style={{ ...styles.descText, textAlign: 'center', marginTop: scale(10) }}>Not John? <Text style={styles.signUpText}>Log out</Text></Text>
 
 

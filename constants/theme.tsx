@@ -20,12 +20,14 @@ export const COLORS = {
   gray: '#DEDEDE',
   deepBlue: '#001F55',
   red: '#FF3D00',
-  green: '#619949',
+  green: '#039855',
   gray300: '#F3F4F7',
+  skyBlue: '#D7E5FF',
   purple: '#9F56D4',
   gray500: '#120542',
   tertiary1: '#F6EFFB',
-  gray_disabled: '#DBDCDF'
+  gray_disabled: '#DBDCDF',
+  gray400: '#4C525E'
 };
 
 export const SIZES = {

@@ -42,7 +42,7 @@ const OtpVerification: React.FC = () => {
                     description="Your email address has been added successfully."
                     buttonText="Continue"
                     onPress={() => {
-                        router.replace('/(main)/home')
+                        router.replace('/(root)/(tabs)/home');
                         setShowSuccess(false);
 
                     }}
@@ -63,7 +63,7 @@ const OtpVerification: React.FC = () => {
                         {/* Input View */}
                         <View style={{ marginTop: scale(20) }}>
                             <CodeFieldComponent
-                               boxNumber={5}
+                                boxNumber={5}
                                 error={undefined}
                                 value={value}
                                 onChange={handleCodeChange}

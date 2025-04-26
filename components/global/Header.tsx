@@ -11,21 +11,23 @@ interface VerificationHeaderProps {
   guild?: boolean;
   category?: boolean;
   nothing?: string;
-  Wallet?: boolean
+  Wallet?: boolean;
+  back?: boolean
 
 }
 
-const Header: React.FC<VerificationHeaderProps> = ({ title, guild, category, nothing, Wallet }) => {
+const Header: React.FC<VerificationHeaderProps> = ({ title, guild, back, category, nothing, Wallet }) => {
 
 
   return (
-    <View style={{...styles.container, backgroundColor: 'transparent'}}>
-      <TouchableOpacity style={{width: '10%'}} onPress={() => router.back()}>
+    <View style={{ ...styles.container, backgroundColor: 'transparent' }}>
       {
-    <MaterialCommunityIcons name="keyboard-backspace" size={24} color="black" />
+        back ? null :
+          <TouchableOpacity style={{ width: '10%' }} onPress={() => router.back()}>
+            <MaterialCommunityIcons name="keyboard-backspace" size={24} color="black" />
+          </TouchableOpacity>
+
       }
-       
-      </TouchableOpacity>
 
       <View style={{ width: '90%' }}>
         <Text style={styles.text}>{title}</Text>

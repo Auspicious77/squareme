@@ -118,7 +118,7 @@ const Input: React.FC<InputProps> = ({
                     }}
                     secureTextEntry={hidePassword}
                     value={value}
-                    style={{ color: phone ? COLORS.black : COLORS.gray300, flex: isBilling ? 0.4 : 1, ...FONTS.regularText, fontSize: scale(16), lineHeight: scale(20), marginLeft: 5 }}
+                    style={{ color: COLORS.black, flex: 1, ...FONTS.regularText, fontSize: scale(16), lineHeight: scale(20), marginLeft: 5 }}
                     placeholderTextColor={COLORS?.gray}
                     onChangeText={onChangeText}
                     defaultValue={defaultValue}
