@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
         paddingBottom: scale(16),
         borderBottomLeftRadius: scale(10),
         borderBottomRightRadius: scale(10),
-        height: SCREEN_HEIGHT * 0.34
+        height: SCREEN_HEIGHT * 0.32
     },
     content: {
 

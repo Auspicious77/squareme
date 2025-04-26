@@ -4,20 +4,25 @@
     "slug": "squareme",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/mainLogo.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/mainLogo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000A4A"
+    },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.akindelefelix1.squareme"
+      "bundleIdentifier": "com.elisha.squareme"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/mainLogo.png",
+        "backgroundColor": "#000A4A"
       },
-      "package": "com.akindelefelix1.squareme"
+      "package": "com.elisha.squareme"
     },
     "web": {
       "bundler": "metro",
@@ -29,7 +34,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/mainLogo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#000A4A"

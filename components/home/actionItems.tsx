@@ -38,8 +38,8 @@ const styles = StyleSheet.create({
     marginTop: scale(12)
   },
   image: {
-    height: scale(30),
-    width: scale(30),
+    height: scale(25),
+    width: scale(25),
     marginBottom: 4,
   },
   title: {

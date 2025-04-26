@@ -9,11 +9,13 @@ import {
   Animated,
   Dimensions,
   SafeAreaView,
+  StatusBar,
 } from 'react-native';
 import { scale } from '@/lib/shared';
 import Button from '@/components/global/button';
 import images from '@/constants/images';
 import { COLORS, FONTS, SIZES } from '@/constants/theme';
+
 
 const { height } = Dimensions.get('window');
 
@@ -55,6 +57,8 @@ const SuccessModal: React.FC<SuccessModalProps> = ({
       visible={visible}
       onRequestClose={onRequestClose}
     >
+      <StatusBar backgroundColor={COLORS.white} barStyle="dark-content" />
+
       <SafeAreaView style={styles.container}>
         <View style={styles.modalContent}>
           <Animated.Image
@@ -67,9 +71,9 @@ const SuccessModal: React.FC<SuccessModalProps> = ({
             <Text style={styles.description}>{description}</Text>
           </View>
 
-        
 
-         
+
+
         </View>
         <View style={styles.footer}>
           <Button
@@ -78,9 +82,9 @@ const SuccessModal: React.FC<SuccessModalProps> = ({
             onPress={onPress}
           />
 
-          </View>
+        </View>
       </SafeAreaView>
-      
+
     </Modal>
   );
 };
@@ -90,7 +94,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.white,
     justifyContent: 'flex-end',
-   
+
   },
   modalContent: {
     backgroundColor: COLORS.white,
@@ -104,7 +108,7 @@ const styles = StyleSheet.create({
     width: scale(100),
     height: scale(100),
     marginBottom: scale(20),
-  
+
   },
   textView: {
     marginTop: scale(10),

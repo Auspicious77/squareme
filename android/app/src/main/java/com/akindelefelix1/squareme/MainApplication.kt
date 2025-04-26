@@ -1,4 +1,4 @@
-package com.akindelefelix1.squareme
+package com.elisha.squareme
 
 import android.app.Application
 import android.content.res.Configuration

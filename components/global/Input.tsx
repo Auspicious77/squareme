@@ -71,12 +71,12 @@ const Input: React.FC<InputProps> = ({
 
             <View
                 style={[
-                    styles.inputContainer, { height: description ? scale(150) : scale(47) },
+                    styles.inputContainer, { height: description ? scale(100) : scale(47) },
                     {
                         borderColor: isFocused
-                            ? COLORS.gray
+                            ? COLORS.primary
                             : COLORS.gray300,
-                        alignItems: description ? undefined : 'center',
+                        alignItems: description ? 'flex-start' : 'center',
                         backgroundColor: COLORS.gray300,
                     },
 
@@ -84,7 +84,7 @@ const Input: React.FC<InputProps> = ({
             >
                 {
                     phone && (
-                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingHorizontal: 2 }}>
+                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems:'center', paddingHorizontal: 2 }}>
 
                             <TouchableOpacity onPress={onPress} style={{ paddingLeft: 3 }}>
                                 {
@@ -118,8 +118,8 @@ const Input: React.FC<InputProps> = ({
                     }}
                     secureTextEntry={hidePassword}
                     value={value}
-                    style={{ color: phone ? COLORS.black : COLORS.gray300, flex: isBilling ? 0.4 : 1, ...FONTS.regularText, fontSize: scale(16), lineHeight: scale(20), marginLeft: 5 }}
-                    placeholderTextColor={COLORS?.gray}
+                    style={{ color: COLORS.black, flex: 1, ...FONTS.regularText, fontSize: scale(16), lineHeight: scale(20), marginLeft: 5 }}
+                    placeholderTextColor={"#70747E"}
                     onChangeText={onChangeText}
                     defaultValue={defaultValue}
                     placeholder={placeholder}
@@ -192,7 +192,7 @@ const styles = StyleSheet.create<Style>({
     label: {
         marginVertical: 7,
         ...FONTS.regularText,
-        fontSize: scale(13),
+        fontSize: scale(14),
         color: COLORS.primary,
     },
     inputContainer: {

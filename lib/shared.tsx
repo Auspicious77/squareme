@@ -35,6 +35,15 @@ export const formattedAmountWithNaira = (amount: any, dp = 2) => {
     : "NGN0.00";
 }
 
+export const amountWithNaira = (amount: any) => {
+  return amount
+    ? "\u20A6" +
+      Math.round(parseFloat(amount)) 
+        .toString()
+        .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+    : "₦0";
+}
+
 export const formatDateString = (dateString: string): string => {
   const date = new Date(dateString);
   const day = date.getDate();
