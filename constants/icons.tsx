@@ -23,16 +23,34 @@ const wifi = require('../assets/icons/wifi.png');
 const light = require('../assets/icons/light.png');
 const arrowleft = require('../assets/icons/arrow-left.png');
 const arrowright = require('../assets/icons/arrow-right.png');
-
-
-
-
-
-
+const bank = require('../assets/icons/bank.png');
+const discountshape = require('../assets/icons/discount-shape.png');
+const medalstar = require('../assets/icons/medal-star.png');
+const messagequestion = require('../assets/icons/message-question.png');
+const money = require('../assets/icons/money.png');
+const shieldtick = require('../assets/icons/shield-tick.png');
+const documenttext = require('../assets/icons/document-text.png');
+const mobile = require('../assets/icons/mobile.png');
+const monitor = require('../assets/icons/monitor.png');
+const truckfast = require('../assets/icons/truck-fast.png');
+const gift = require('../assets/icons/gift.png');
+const shop = require('../assets/icons/shop.png');
 
 
 
 export default {
+  bank,
+  monitor,
+  gift,
+  shop,
+  truckfast,
+  mobile,
+  documenttext,
+  discountshape,
+  medalstar,
+  messagequestion,
+  money,
+  shieldtick,
   airtime,
   arrowright,
   arrowleft,

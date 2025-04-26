@@ -1,4 +1,4 @@
-package com.akindelefelix1.squareme
+package com.elisha.squareme
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build

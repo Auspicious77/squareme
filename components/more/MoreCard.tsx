@@ -9,6 +9,7 @@ interface MoreCardProps {
         title: string;
         desc: string;
         img: any;
+        color?: any;
         onPress?: () => void;
     };
     index: number
@@ -18,11 +19,15 @@ const MoreCard: React.FC<MoreCardProps> = ({ item, index }) => {
     return (
     
         <TouchableOpacity onPress={item.onPress} style={{...styles.container, borderBottomWidth: index == 4 ? 0 : 0.8, paddingBottom: 10, borderBottomColor: COLORS.gray}}>
+            <View style={{backgroundColor: item.color, paddingVertical: scale(6), borderRadius: 10, paddingHorizontal: scale(6)}}>
             <Image
                 source={item.img}
                 style={styles.image}
                 resizeMode="contain"
             />
+
+            </View>
+          
             <View style={{marginLeft: scale(20), width: '75%'}}>
                 <Text style={styles.title}>{item.title}</Text>
                 <Text style={styles.desc}>{item.desc}</Text>
@@ -46,8 +51,8 @@ const styles = StyleSheet.create({
 
     },
     image: {
-        height: scale(35),
-        width: scale(35),
+        height: scale(28),
+        width: scale(28),
         marginBottom: 4,
     },
     title: {

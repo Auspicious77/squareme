@@ -9,8 +9,9 @@ import images from '@/constants/images';
 import { COLORS, FONTS } from '@/constants/theme';
 import { scale } from '@/lib/shared';
 import { MaterialIcons } from '@expo/vector-icons';
+import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { StyleSheet, View, Text, SafeAreaView, FlatList, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, View, Text, SafeAreaView, FlatList, TouchableOpacity, Image, StatusBar } from 'react-native';
 
 
 const Payment = () => {
@@ -23,6 +24,8 @@ const Payment = () => {
       <Header
         back={true}
         title='Payment' />
+                <StatusBar backgroundColor={COLORS.white} barStyle="dark-content" />
+        
       <View style={styles.body}>
         <PaymentCard
           iconName={icons.arrowright}
@@ -30,6 +33,7 @@ const Payment = () => {
           title='Send Money'
           desc='Send money to anyone instantly'
           borderWidth
+          onPress={()=> router.navigate('/send-money')}
         />
 
         <PaymentCard
@@ -37,6 +41,8 @@ const Payment = () => {
           backGroundColor={'#F2FAEB'}
           title='Request Money'
           desc='Request money from your friends and family'
+          onPress={()=> router.navigate('/request-money')}
+
         />
 
         <Text style={{ ...styles.descText, fontSize: scale(14), marginVertical: scale(14) }}>

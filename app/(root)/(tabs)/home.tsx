@@ -9,7 +9,8 @@ import TransactionCard from '@/components/home/TransactionCard';
 import { MaterialIcons } from '@expo/vector-icons';
 import images from '@/constants/images';
 import MoreActions from '@/components/home/moreActions';
-import styles from '../main/home/styles';
+import styles from '../(main)/(home)/styles';
+
 
 
 const { width } = Dimensions.get('window');

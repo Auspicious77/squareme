@@ -86,9 +86,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.akindelefelix1.squareme'
+    namespace 'com.elisha.squareme'
     defaultConfig {
-        applicationId 'com.akindelefelix1.squareme'
+        applicationId 'com.elisha.squareme'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

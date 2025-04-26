@@ -80,9 +80,7 @@ const SignIn: React.FC = () => {
                     text='Login' 
                     onPress={()=> router.replace('/(root)/(tabs)/home')}
                     />
-                <Text style={{ ...styles.descText, textAlign: 'center', marginTop: scale(10) }}>Not John? <Text style={styles.signUpText}>Log out</Text></Text>
-
-
+                <Text style={{ ...styles.descText, textAlign: 'center', marginTop: scale(10) }}>Not John? <Text onPress={()=> router.navigate('/(auth)/onboarding')} style={styles.signUpText}>Log out</Text></Text>
                 <Text style={{ ...styles.descText, textAlign: 'center', marginTop: scale(10) }}>
                     v1.282.2
                 </Text>

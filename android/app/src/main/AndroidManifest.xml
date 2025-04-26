@@ -25,7 +25,7 @@
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="myapp"/>
-        <data android:scheme="com.akindelefelix1.squareme"/>
+        <data android:scheme="com.elisha.squareme"/>
         <data android:scheme="exp+squareme"/>
       </intent-filter>
     </activity>

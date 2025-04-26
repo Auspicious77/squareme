@@ -28,7 +28,7 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>myapp</string>
-          <string>com.akindelefelix1.squareme</string>
+          <string>com.elisha.squareme</string>
         </array>
       </dict>
       <dict>
