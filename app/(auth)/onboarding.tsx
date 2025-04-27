@@ -16,7 +16,7 @@ const { width, height } = Dimensions.get('window');
 const slides = [
     {
         key: 'slide1',
-        title: 'Spend your money easily without any complications',
+        title: 'Spend your money easily \nwithout any complications',
         text: "Receive funds sent to you in seconds.",
         image: images.onboarding1,
     },
@@ -138,7 +138,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         lineHeight: scale(30),
         fontSize: 25,
-        fontWeight: 'bold',
         marginTop: scale(40),
         width: '85%',
         alignSelf: 'center'
