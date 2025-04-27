@@ -93,8 +93,8 @@ const styles = StyleSheet.create({
         borderColor: COLORS.primary,
       },
       cellContainer: {
-        width: Platform.OS == 'android'? scale(52): scale(57),
-        height: Platform.OS == 'android'? scale(50): scale(55),
+        width: Platform.OS == 'android'? scale(52): scale(52),
+        height: Platform.OS == 'android'? scale(50): scale(50),
         alignItems: 'center',
         justifyContent: 'center',
         borderWidth: 1,
