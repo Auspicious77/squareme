@@ -16,7 +16,7 @@ const { width, height } = Dimensions.get('window');
 const slides = [
     {
         key: 'slide1',
-        title: 'Spend your money easily \nwithout any complications',
+        title: 'Spend your money easily without any complications',
         text: "Receive funds sent to you in seconds.",
         image: images.onboarding1,
     },

@@ -46,7 +46,7 @@ const AccountCard: React.FC<VerificationHomeHeaderProps> = ({ title, message, to
                 }
            
                 <View
-                    style={{...styles.header,  marginLeft: iconName? scale(0) : null}}>
+                    style={{...styles.header,}}>
                     <Text style={{ ...styles.text,  fontSize: titleSize || scale(14), color: COLORS.black, ...titleStyle }}>{title}</Text>
                     {
                         message &&
@@ -123,7 +123,6 @@ const styles = StyleSheet.create({
     },
     text: {
         ...FONTS.mediumText,
-        fontWeight: "500"
 
 
     },
