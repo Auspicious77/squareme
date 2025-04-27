@@ -43,6 +43,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a6a53830-fd76-4caa-9c58-d61d6850d2b4"
+      }
+    },
+    "owner": "auspicious77"
   }
 }

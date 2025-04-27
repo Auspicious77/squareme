@@ -1,7 +1,7 @@
 
 import { COLORS, FONTS, SCREEN_WIDTH, SIZES } from '@/constants/theme';
 import React, { useEffect, useRef, useState } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity, Dimensions, ScrollView, Keyboard, SafeAreaView, ImageBackground, Alert, TextInput } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, Dimensions, ScrollView, Keyboard, SafeAreaView, ImageBackground, Alert, TextInput, KeyboardAvoidingView } from 'react-native';
 import { scale } from '@/lib/shared';
 import CodeFieldComponent from '@/components/global/CodeFieldComponent';
 // import { styles } from './styles';
@@ -54,7 +54,9 @@ const SignUp: React.FC = () => {
                                 label='Phone Number'
                                 value={payload.phone}
                                 iconName={icons.flag}
+                                keyboardType={'numeric'}
                                 phone={true}
+                                maxLenght={11}
                                 placeholder='080 918 9282 918'
                                 onChangeText={(text: string) => setPayload({ ...payload, phone: text })}
                             />
@@ -77,9 +79,10 @@ const SignUp: React.FC = () => {
             </SafeAreaView>
 
             {/* footer */}
-            <View style={styles.footer}>
+            <KeyboardAvoidingView
+             style={styles.footer}>
                 <Button
-                    buttonStyle={{ marginTop: scale(60) }}
+                    buttonStyle={{  }}
                     text='Next' 
                     onPress={() => router.navigate('/(auth)/verify-phone')}
                     />
@@ -93,7 +96,7 @@ const SignUp: React.FC = () => {
                 </Text>
 
 
-            </View>
+            </KeyboardAvoidingView>
         </>
     );
 };

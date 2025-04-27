@@ -86,7 +86,8 @@ const styles = StyleSheet.create({
     page: {
         flex: 1,
         backgroundColor: COLORS.white,
-        paddingHorizontal: SIZES.width * 0.05,
+        paddingTop: Platform.OS == 'android'? scale(30): 0
+       
     },
     text1: {
         ...FONTS.regularText,

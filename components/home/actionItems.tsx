@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { TouchableOpacity, Image, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, Image, Text, StyleSheet, Platform } from 'react-native';
 import { scale } from '@/lib/shared';
 import { COLORS, FONTS, SIZES } from '@/constants/theme';
 
@@ -30,8 +30,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: scale(4),
-    width: 70,
-    height: 70,
+    width: Platform.OS == 'android'? 67 : 69,
+    height: 67,
     backgroundColor: COLORS.gray300,
     borderRadius: SIZES.base,
     marginHorizontal: scale(4),
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   title: {
     ...FONTS.regularText,
     color: COLORS.black,
-    fontSize: 13,
+    fontSize: scale(11),
     textAlign: 'center',
   
   },

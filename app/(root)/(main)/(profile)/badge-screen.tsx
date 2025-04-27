@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet, Platform } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { ProgressBar } from 'react-native-paper';
 import { router } from 'expo-router';
 import Header from '@/components/global/Header';
 import { COLORS, FONTS } from '@/constants/theme';
+import { scale } from '@/lib/shared';
 
 const BadgesScreen = () => {
 
@@ -101,7 +102,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFFFFF',
-    paddingTop: 50,
+    paddingTop:scale(30)
+    
   },
   header: {
     flexDirection: 'row',

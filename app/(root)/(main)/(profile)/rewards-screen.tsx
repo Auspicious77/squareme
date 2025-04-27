@@ -2,7 +2,7 @@ import Header from '@/components/global/Header';
 import { COLORS, FONTS } from '@/constants/theme';
 import { scale } from '@/lib/shared';
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView, Platform } from 'react-native';
 
 const RewardsScreen = () => {
   return (
@@ -59,7 +59,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F7F8FA',
-    paddingHorizontal: 20,
+    paddingTop: Platform.OS == 'android'? scale(30): 0
+
+    
   },
   headerContainer: {
     flexDirection: 'row',

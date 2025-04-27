@@ -82,6 +82,7 @@ const SendMoney: React.FC = () => {
 
                 <FormButton
                     buttonStyle={{ marginTop: scale(20) }}
+                    fontSize={17}
                     text={selectedText ? selectedText : "Where do you want to send money?"}
                     onPress={openBottomSheet}
                 />
@@ -201,16 +202,16 @@ const styles = StyleSheet.create({
         backgroundColor: '#9F56D41A',
         paddingVertical: scale(10),
         paddingHorizontal: scale(10),
-        width: '50%',
+        // width: '50%',
         alignSelf: 'center',
         borderRadius: scale(14),
         marginTop: scale(25)
 
     },
     text1: {
-        ...FONTS.mediumText,
+        ...FONTS.regularText,
         color: '#B7BABF',
-        fontSize: scale(17),
+        fontSize: scale(15),
         textAlign: 'center'
 
     },
@@ -252,7 +253,7 @@ const styles = StyleSheet.create({
         color: COLORS.black,
     },
     body: {
-        marginHorizontal: scale(15)
+        marginHorizontal: scale(8)
     },
     box: {
         height: SIZES.h1 * 1.6,

@@ -1,7 +1,7 @@
 import { COLORS, FONTS, SIZES } from '@/constants/theme';
 import { scale } from '@/lib/shared';
 import React, { useState } from 'react';
-import { SafeAreaView, Text, StyleSheet, View } from 'react-native';
+import { SafeAreaView, Text, StyleSheet, View, Platform } from 'react-native';
 
 import {
   CodeField,
@@ -75,12 +75,13 @@ const styles = StyleSheet.create({
         marginVertical: 5,
       },
       root: {
-        paddingHorizontal: SIZES.width * 0.05,
         marginBottom: SIZES.h2,
+        // alignItems: 'flex-start',
+        // justifyContent: 'space-between'
         // marginHorizontal: 10,
        },
       title: { },
-      codeFieldRoot: {  },
+      codeFieldRoot: { },
       cell: {
      
         ...FONTS.mediumText,
@@ -90,11 +91,10 @@ const styles = StyleSheet.create({
       },
       focusCell: {
         borderColor: COLORS.primary,
-        // borderWidth: 1,
       },
       cellContainer: {
-        width: 61,
-        height: 55,
+        width: Platform.OS == 'android'? scale(52): scale(52),
+        height: Platform.OS == 'android'? scale(50): scale(50),
         alignItems: 'center',
         justifyContent: 'center',
         borderWidth: 1,
