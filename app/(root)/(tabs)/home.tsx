@@ -118,6 +118,7 @@ const HomeScreen: React.FC = () => {
                     data={displayedActions}
                     ListHeaderComponent={listHeaderComponent}
                     contentContainerStyle={{paddingBottom: scale(300)}}
+                    columnWrapperStyle={{ alignSelf: 'flex-start', justifyContent: 'center', alignItems: 'center'}}
                     renderItem={({ item }) => <ActionItems item={item} />}
                     keyExtractor={(item, index) => index.toString()}
                     showsVerticalScrollIndicator={false}
