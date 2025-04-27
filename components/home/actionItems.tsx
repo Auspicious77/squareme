@@ -2,7 +2,7 @@
 import React from 'react';
 import { TouchableOpacity, Image, Text, StyleSheet, Platform } from 'react-native';
 import { scale } from '@/lib/shared';
-import { COLORS, FONTS, SIZES } from '@/constants/theme';
+import { COLORS, FONTS, SCREEN_WIDTH, SIZES } from '@/constants/theme';
 
 interface ActionItemsProps {
   item: {
@@ -29,9 +29,10 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
+    alignSelf: 'center',
     padding: scale(4),
-    width: Platform.OS == 'android'? 67 : 69,
-    height: 67,
+    width: SCREEN_WIDTH/6.2,
+    height: scale(62),
     backgroundColor: COLORS.gray300,
     borderRadius: SIZES.base,
     marginHorizontal: scale(4),

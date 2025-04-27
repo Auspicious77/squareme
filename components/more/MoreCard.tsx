@@ -58,14 +58,14 @@ const styles = StyleSheet.create({
     title: {
         ...FONTS.mediumText,
         color: COLORS.black,
-        fontSize: 19,
+        fontSize: scale(16),
         textAlign: 'left',
 
     },
     desc: {
         ...FONTS.regularText,
         color: COLORS.black,
-        fontSize: 15,
+        fontSize: scale(13),
         textAlign: 'left',
         marginTop: scale(5)
     },

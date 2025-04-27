@@ -69,20 +69,20 @@ const More = () => {
                             <AccountCard
                                 backGroundColor={COLORS.white}
                                 canPreview={false}
-                                titleSize={18}
+                                titleSize={scale(15)}
                                 color={'rgba(236, 243, 254, 1)'}
                                 iconName={icons.mobile}
                                 title='Reward'
                                 message='Pay all your bills on squareme'
                                 borderBottom={false}
                                 onPress={() => { }}
-                                messageSize={15}
+                                messageSize={scale(13)}
                             />
 
                             <AccountCard
                                 backGroundColor={COLORS.white}
                                 canPreview={false}
-                                titleSize={18}
+                                titleSize={scale(15)}
                                 color={'rgba(255, 242, 229, 1)'}
                                 iconName={icons.light}
                                 title='Purchase electricity units'
@@ -90,20 +90,20 @@ const More = () => {
                                 borderBottom={false}
                                 tintColor={'rgba(249, 139, 78, 1)'}
                                 onPress={() => { }}
-                                messageSize={15}
+                                messageSize={scale(13)}
                             />
 
                             <AccountCard
                                 backGroundColor={COLORS.white}
                                 canPreview={false}
-                                titleSize={18}
+                                titleSize={scale(15)}
                                 color={'rgba(245, 235, 254, 1)'}
                                 iconName={icons.monitor}
                                 title='Subscribe your Cable TV'
                                 message='Subscribe now for nonstop entertainment'
                                 borderBottom={false}
                                 onPress={() => { }}
-                                messageSize={15}
+                                messageSize={scale(13)}
                             />
                         </View>
 
@@ -113,20 +113,20 @@ const More = () => {
                             <AccountCard
                                 backGroundColor={COLORS.white}
                                 canPreview={false}
-                                titleSize={18}
+                                titleSize={scale(15)}
                                 color={'rgba(246, 235, 254, 1)'}
                                 iconName={icons.card}
                                 title='Top up your virtual card'
                                 message='Avoid failed transactions by topping up your card'
                                 borderBottom={false}
                                 onPress={() => { }}
-                                messageSize={15}
+                                messageSize={scale(13)}
                             />
 
                             <AccountCard
                                 backGroundColor={COLORS.white}
                                 canPreview={false}
-                                titleSize={18}
+                                titleSize={scale(15)}
                                 color={'rgba(236, 243, 254, 1)'}
                                 iconName={icons.truckfast}
                                 title='Request a delivery address'
@@ -134,7 +134,7 @@ const More = () => {
                                 borderBottom={false}
                                 tintColor={'rgba(57, 118, 232, 1)'}
                                 onPress={() => { }}
-                                messageSize={15}
+                                messageSize={scale(13)}
                             />
                         </View>
 
@@ -143,14 +143,14 @@ const More = () => {
                             <AccountCard
                                 backGroundColor={COLORS.white}
                                 canPreview={false}
-                                titleSize={18}
+                                titleSize={scale(15)}
                                 color={'rgba(238, 238, 255, 1)'}
                                 iconName={icons.strongbox2}
                                 title='Create POT'
                                 message='Earn up to 14% interest on locked funds'
                                 borderBottom={false}
                                 onPress={() => { }}
-                                messageSize={15}
+                                messageSize={scale(13)}
                             />
 
                         </View>

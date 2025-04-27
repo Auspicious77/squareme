@@ -6,7 +6,7 @@ import MoreCard from '@/components/more/MoreCard';
 import PaymentCard from '@/components/more/PaymentCard';
 import icons from '@/constants/icons';
 import images from '@/constants/images';
-import { COLORS, FONTS } from '@/constants/theme';
+import { COLORS, FONTS, SCREEN_WIDTH } from '@/constants/theme';
 import { scale } from '@/lib/shared';
 import { MaterialIcons } from '@expo/vector-icons';
 import { router } from 'expo-router';
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     opacity: 0.8
   },
   img: {
-    width: 378,
+    width: SCREEN_WIDTH*0.9,
     height: 170
   }
 

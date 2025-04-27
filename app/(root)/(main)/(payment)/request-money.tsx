@@ -201,16 +201,16 @@ const styles = StyleSheet.create({
         backgroundColor: '#9F56D41A',
         paddingVertical: scale(10),
         paddingHorizontal: scale(10),
-        width: '50%',
+        // width: '50%',
         alignSelf: 'center',
         borderRadius: scale(14),
         marginTop: scale(25)
 
     },
     text1: {
-        ...FONTS.mediumText,
+        ...FONTS.regularText,
         color: '#B7BABF',
-        fontSize: scale(17),
+        fontSize: scale(15),
         textAlign: 'center'
 
     },
@@ -227,7 +227,7 @@ const styles = StyleSheet.create({
     page: {
         flex: 1,
         backgroundColor: COLORS.bg,
-        paddingHorizontal: SIZES.width * 0.05,
+        // paddingHorizontal: SIZES.width * 0.05,
         // paddingTop: scale(60),
     },
     otpContainer: {

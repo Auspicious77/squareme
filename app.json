@@ -52,6 +52,10 @@
         "projectId": "a6a53830-fd76-4caa-9c58-d61d6850d2b4"
       }
     },
-    "owner": "auspicious77"
+    "owner": "auspicious77",
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/a6a53830-fd76-4caa-9c58-d61d6850d2b4"
+    }
   }
 }
