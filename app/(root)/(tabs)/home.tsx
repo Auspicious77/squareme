@@ -24,7 +24,7 @@ const HomeScreen: React.FC = () => {
         { id: '2', img: icons.walletminus, title: 'Withdraw', onPress: () => { } },
         { id: '3', img: icons.receipt, title: 'Pay Bills', onPress: () => { } },
         { id: '4', img: icons.card, title: 'Cards', onPress: () => { } },
-        { id: '5', img: icons.strongbox2, title: 'Sqaureme Pot', onPress: () => { } },
+        { id: '5', img: icons.strongbox2, title: 'Squareme \nPot', onPress: () => { } },
         { id: '6', img: icons.airtime, title: 'Airtime', onPress: () => { } },
         { id: '7', img: icons.wifi, title: 'Data', onPress: () => { } },
         { id: '8', img: icons.tv, title: 'Cable TV', onPress: () => { } },

@@ -11,7 +11,7 @@ import { scale } from '@/lib/shared';
 import { MaterialIcons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { StyleSheet, View, Text, SafeAreaView, FlatList, TouchableOpacity, Image, StatusBar } from 'react-native';
+import { StyleSheet, View, Text, SafeAreaView, FlatList, TouchableOpacity, Image, StatusBar, Platform } from 'react-native';
 
 
 const Payment = () => {
@@ -21,10 +21,10 @@ const Payment = () => {
   ];
   return (
     <SafeAreaView style={styles.container}>
+
       <Header
         back={true}
         title='Payment' />
-                <StatusBar backgroundColor={COLORS.white} barStyle="dark-content" />
         
       <View style={styles.body}>
         <PaymentCard
@@ -88,7 +88,8 @@ export default Payment
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.white
+    backgroundColor: COLORS.white,
+    paddingTop: Platform.OS == 'android'? scale(30): 0
   },
   body: {
     marginHorizontal: scale(15)

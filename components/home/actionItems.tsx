@@ -30,8 +30,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: scale(4),
-    width: 70,
-    height: 70,
+    width: 67,
+    height: 67,
     backgroundColor: COLORS.gray300,
     borderRadius: SIZES.base,
     marginHorizontal: scale(4),
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   title: {
     ...FONTS.regularText,
     color: COLORS.black,
-    fontSize: 13,
+    fontSize: scale(11),
     textAlign: 'center',
   
   },

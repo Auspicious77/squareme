@@ -9,7 +9,7 @@ import { COLORS, FONTS, SIZES } from '@/constants/theme';
 import { scale } from '@/lib/shared';
 import { AntDesign } from '@expo/vector-icons';
 import { useEffect, useRef, useState } from 'react';
-import { StyleSheet, View, Text, SafeAreaView, FlatList, ScrollView, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Text, SafeAreaView, FlatList, ScrollView, TouchableOpacity, Platform } from 'react-native';
 import RBSheet from 'react-native-raw-bottom-sheet';
 
 
@@ -175,7 +175,9 @@ export default More
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: COLORS.white
+        backgroundColor: COLORS.white,
+        paddingTop: Platform.OS == 'android'? scale(30): 0
+
     },
     body: {
         marginHorizontal: scale(15)

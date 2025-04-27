@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity, Dimensions, SafeAreaView } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, Dimensions, SafeAreaView, Platform } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { useNavigation } from '@react-navigation/native';
 import images from '../../constants/images';
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
         width: 28,
         height: 6,
         borderRadius: 5,
-        bottom: SIZES.padding * 7.9,
+        bottom: Platform.OS == 'ios'? SIZES.padding * 7.9: SIZES.padding*9.6,
         transform: [{ translateX: -5 }],
     },
 
@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         height: 6,
         borderRadius: 5,
-        bottom: SIZES.padding * 7.9,
+        bottom: Platform.OS == 'ios'? SIZES.padding * 7.9: SIZES.padding*9.6,
         transform: [{ translateX: -5 }],
     },
 

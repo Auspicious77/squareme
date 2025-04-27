@@ -1,16 +1,19 @@
 import { COLORS, FONTS } from "@/constants/theme";
 import { scale } from "@/lib/shared";
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 
 
  const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: COLORS.white,
+        paddingTop: Platform.OS == 'android'?  35 : 0,
+       
     },
     body: {
         marginHorizontal: scale(20),
-        marginTop: scale(20)
+        marginTop: scale(20),
+        paddingBottom:Platform.OS == 'android'? 100 : 10
     },
     privacyView: {
         marginVertical: scale(20),
@@ -31,9 +34,8 @@ import { StyleSheet } from "react-native";
     },
     footer: {
         paddingHorizontal: scale(20),
-        paddingBottom: scale(60),
+        paddingBottom: Platform.OS == 'ios'? scale(60) : scale(40),
         backgroundColor: COLORS.white,
-  
      
     },
     forgotView: {

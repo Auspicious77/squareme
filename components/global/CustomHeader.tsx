@@ -83,7 +83,7 @@ const CustomHeader: React.FC<CustomHeaderProps> = ({
                         }
 
                         {/* tag */}
-                        <View style={{ ...styles.row2, marginTop: scale(30), justifyContent: 'center' }}>
+                        <View style={{ ...styles.row2, marginTop: scale(20), justifyContent: 'center' }}>
                             <Text style={{ ...styles.smallText, fontSize: 14, textAlign: 'center', marginRight: 5 }}>Squaremetag: @david222</Text>
                             <TouchableOpacity>
                             <Ionicons name="copy-outline" size={18} color={COLORS.purple} />

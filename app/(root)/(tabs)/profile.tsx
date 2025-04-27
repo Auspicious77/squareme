@@ -10,7 +10,7 @@ import { scale } from '@/lib/shared';
 import { MaterialIcons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { StyleSheet, View, Text, SafeAreaView, FlatList, Image, TouchableOpacity, ScrollView } from 'react-native';
+import { StyleSheet, View, Text, SafeAreaView, FlatList, Image, TouchableOpacity, ScrollView, Platform } from 'react-native';
 
 
 const Profile = () => {
@@ -152,7 +152,9 @@ export default Profile
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.white
+    backgroundColor: COLORS.white,
+    paddingTop: Platform.OS == 'android'? scale(30): 0
+
   },
   body: {
     marginHorizontal: scale(15)

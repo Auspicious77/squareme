@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { StyleSheet, Text, View, StatusBar, TouchableOpacity, FlatList, SafeAreaView, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, TouchableOpacity, FlatList, SafeAreaView, ScrollView, Platform } from 'react-native';
 import { COLORS, FONTS, SIZES } from '@/constants/theme';
 import { formattedAmountWithNaira, scale } from '@/lib/shared';
 import FormButton from '@/components/global/FormButton';
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     page: {
         flex: 1,
         backgroundColor: COLORS.white,
-        paddingHorizontal: SIZES.width * 0.05,
+        paddingTop: Platform.OS == 'android'? scale(30): 0
         // paddingTop: scale(60),
     },
 
